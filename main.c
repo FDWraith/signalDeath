@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <unistd.h>
 #include <signal.h>
 
 static void sighandler(int SIG){
   if( SIG == SIGINT ){
     printf("Exiting Due to SIGINT\n");
-    exit();
+    exit(0);
   }else if( SIG == SIGUSR1 ){
     printf("Parent PID: %d\n", getppid());
   }

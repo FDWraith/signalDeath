@@ -1,6 +1,6 @@
 compile:
-	gcc main.c -o run
+	gcc main.c -o test
 run:
-	./run
+	./test
 clear:
-	rm run
+	rm test
